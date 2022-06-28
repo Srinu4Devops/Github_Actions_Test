@@ -11,3 +11,12 @@ jobs:
           who-to-greet: Srinee
       - name: Log Greeting time
         run: echo "${{steps.greet.outputs.time}}"
+  Running-Shell-Commands:
+    runs-on: windows-latest
+    needs: ["running-github-actions"]
+    steps:
+      - name: python script
+        run: import platform
+             (platform.processor())
+        shell: python
+    
