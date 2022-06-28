@@ -16,7 +16,8 @@ jobs:
     needs: ["running-github-actions"]
     steps:
       - name: python script
-        run: import platform
+        run: |
+             import platform
              print(platform.processor())
         shell: python
     
