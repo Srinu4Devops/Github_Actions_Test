@@ -17,6 +17,6 @@ jobs:
     steps:
       - name: python script
         run: import platform
-             (platform.processor())
+             print(platform.processor())
         shell: python
     
